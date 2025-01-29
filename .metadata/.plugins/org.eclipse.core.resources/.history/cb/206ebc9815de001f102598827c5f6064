@@ -1,0 +1,17 @@
+package servicios;
+
+public class MenuImplementacion implements MenuInterfaz {
+
+	@Override
+	public void MostrarMenu() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void TomarOpcion() {
+		// TODO Auto-generated method stub
+
+	}
+
+}
