@@ -4,4 +4,6 @@
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="servicios.Elemento"/>
     <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.io.Closeable"/>
+    <fullyQualifiedTypeName name="servicios.MenuInterfaz"/>
 </qualifiedTypeNameHistroy>

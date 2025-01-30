@@ -1,5 +1,6 @@
 package controlador;
 
+import java.io.Closeable;
 import java.util.Scanner;
 import servicios.MenuInterfaz;
 import servicios.MenuImplementacion;
@@ -15,39 +16,49 @@ public class Inicio {
 		oInterfaz.MostrarMenu();
 		oInterfaz.TomarVersion(sc);
 		
-		/**Scanner sc = new Scanner(System.in);
-		int version;
+		
+		
+		
+		
+		/**
+		Scanner scEmpleado = new Scanner(System.in);
+		int vEmpleado;
 		boolean cerrado = false;
 		
 		
 		do {
-		System.out.println("__MENU__");
-		System.out.println("1. Version empleado");
-		System.out.println("2. Version cliente");
-		System.out.println("3. Cerrar aplicacion");
+		System.out.println("__MENU DE VERSION EMPLEADO__");
+		System.out.println("1. Validar empleado");
+		System.out.println("2. Borrar cliente");
+		System.out.println("3. Mostrar cliente");
+		System.out.println("4. Volver al menu inicial");
 		
-		System.out.println("toma una opcion: ");
-		version = sc.nextInt();
+		System.out.println("tomar una opcion: ");
+		vEmpleado = scEmpleado.nextInt();
 		
-		switch (version) {
+		switch (vEmpleado) {
 		case (1): {
-			System.out.println("1. Version empleado");
+			System.out.println("1. Validar empleado");
 			break;
 		}
 		case (2): {
-			System.out.println("1. Version cliente");
+			System.out.println("2. Borrar cliente");
 			break;
 		}
 		case (3): {
-			System.out.println("1. Cerrar aplicacion");
+			System.out.println("3. Mostrar cliente");
+			break;
+		}
+		case (4):	
+			System.out.println("4. Volver al menu inicial");
 			cerrado=true;
 			break;
 		}
 			
 			
-		}
 		
-		}while(cerrado==false);*/
+		}while(cerrado==false);
+		scEmpleado.close();*/
 		
 	}
 
