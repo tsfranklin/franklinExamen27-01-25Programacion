@@ -9,7 +9,6 @@ public interface MenuInterfaz {
 	public void TomarVersion(Scanner sc);
 	
 	
-	public void MenuVersionEmpleado(Scanner sc);
 	
 	
 	

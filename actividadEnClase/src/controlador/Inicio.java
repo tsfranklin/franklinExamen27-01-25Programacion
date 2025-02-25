@@ -1,11 +1,20 @@
 package controlador;
-
-import java.io.Closeable;
 import java.util.Scanner;
-import servicios.MenuInterfaz;
 import servicios.MenuImplementacion;
+import servicios.MenuInterfaz;
+import servicios.ClienteImplementacion;
+import servicios.ClienteInterfaz;
+import dtos.ClienteDto;
+
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Inicio {
+	
+	
+	public static List <ClienteDto> clientes = new ArrayList();
+	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -15,50 +24,27 @@ public class Inicio {
 		
 		oInterfaz.MostrarMenu();
 		oInterfaz.TomarVersion(sc);
+		System.out.println(clientes);
 		
 		
 		
 		
 		
-		/**
-		Scanner scEmpleado = new Scanner(System.in);
-		int vEmpleado;
-		boolean cerrado = false;
 		
 		
-		do {
-		System.out.println("__MENU DE VERSION EMPLEADO__");
-		System.out.println("1. Validar empleado");
-		System.out.println("2. Borrar cliente");
-		System.out.println("3. Mostrar cliente");
-		System.out.println("4. Volver al menu inicial");
+		/**ClienteDto cliente1 = new ClienteDto(001,"12345678A", "Franklin", "Torres", "Santos", "Frank@gmail.com", "f1234", true);
 		
-		System.out.println("tomar una opcion: ");
-		vEmpleado = scEmpleado.nextInt();
+		System.out.println(cliente1.toString());
 		
-		switch (vEmpleado) {
-		case (1): {
-			System.out.println("1. Validar empleado");
-			break;
-		}
-		case (2): {
-			System.out.println("2. Borrar cliente");
-			break;
-		}
-		case (3): {
-			System.out.println("3. Mostrar cliente");
-			break;
-		}
-		case (4):	
-			System.out.println("4. Volver al menu inicial");
-			cerrado=true;
-			break;
-		}
-			
-			
+		cliente1.setNombre("Mauricio");
+		cliente1.setApellido1("cardales");
+		cliente1.setEsValidado(false);
 		
-		}while(cerrado==false);
-		scEmpleado.close();*/
+		System.out.println(cliente1.toString());*/
+		
+		
+		
+		
 		
 	}
 
